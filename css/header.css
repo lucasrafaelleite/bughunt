@@ -1,0 +1,161 @@
+/* Topbar */
+.top__bar {
+    background: #1C1C1C;
+    color: #fff;
+}
+
+.top__bar .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+    align-items: center;
+}
+
+.top__bar a {
+    color: #fff;
+}
+
+.top__bar .left p {
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+.top__bar .left a {
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.top__bar .left a:hover {
+    color: #7C24FB;
+}
+
+.top__bar .right {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.top__bar .right a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+   
+}
+
+.top__bar .right a.login {
+    border: 1px #575757 solid;
+    border-radius: 40px;
+    padding: 4px 20px;
+}
+
+.top__bar .right a.login:hover {
+    background: #7C24FB;
+}
+
+
+/* Header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header .logo img {
+    width: 150px;
+    display: block;
+}
+
+header .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+header .menu ul li {
+    position: relative;
+}
+
+header .menu ul li ul.sub {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    width: 200px;
+    justify-content: flex-start;
+    gap: 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 10;
+    display: none;
+}
+
+header .menu ul li:hover ul.sub {
+    display: flex;
+}
+
+header .menu ul li ul.sub li {
+    width: 100%;
+    text-align: center;
+}
+
+header .menu ul li ul.sub li a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px #dedede dotted;
+}
+
+header .menu ul li ul.sub li a.publico strong {
+    color: #7C24FB;
+}
+
+header .menu ul li ul.sub li a.privado strong {
+    color: #32B77E;
+}
+
+header .menu ul li ul.sub li a.social strong {
+    color: #1E88E5;
+}
+
+header .menu ul li ul.sub li:last-child a {
+    border: 0;
+}
+
+header .menu a {
+    font-size: 18px;
+    color: #1C1C1C;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.831px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s;
+}
+
+header .menu a:hover {
+    color: var(--roxo);
+}
+
+header .cta {
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    background: var(--roxo);
+    border-radius: 6px;
+    padding: 16px 60px;
+    transition: all .3s;
+}
+
+header .cta:hover {
+    background: var(--verde);
+    color: #000;
+}

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="fonts/plus-jakarta-sans/plus-jakarta-sans.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+
+
+    <meta property="og:title" content="1ª Plataforma de recompensa por bugs do Brasil">
+    <meta property="og:description" content="Conectamos especialistas em segurança com empresas que querem testar seu software. É grátis e você recompensa apenas os resultados.">
+    <meta property="og:image" content="https://bughunt-cdn-images.s3.us-east-2.amazonaws.com/logo13as32sgrf6cfgb.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="BugHunt">
+    <meta property="og:url" content="https://www.bughunt.com.br">
+
+    <meta property="twitter:site" content="https://twitter.com/bughuntoficial">
+    <meta property="twitter:title" content="1ª Plataforma de recompensa por bugs do Brasil">
+    <meta property="twitter:description" content="Conectamos especialistas em segurança com empresas que querem testar seu software. É grátis e você recompensa apenas os resultados.">
+    <meta property="twitter:image" content="https://bughunt-cdn-images.s3.us-east-2.amazonaws.com/logo13as32sgrf6cfgb.png">
+
+    <title>BugHunt - 1ª Plataforma de Bug Bounty do Brasil</title>
+</head>
+<body>
+    <div class="top__bar">
+        <div class="container">
+            <div class="left">
+                <p>
+                    Foi contactado por um hacker?
+                    <a href="#">
+                        Fale com nossa equipe
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4.6665 11.3332L11.3332 4.6665" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.6665 4.6665H11.3332V11.3332" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </p>
+            </div>
+            <div class="right">
+                <a href="#" class="login">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M10 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H10" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.6665 11.3332L9.99984 7.99984L6.6665 4.6665" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 8H2" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Login
+                </a>
+                <a href="#" class="translate">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_326_1151)">
+                        <path d="M8.00016 14.6668C11.6821 14.6668 14.6668 11.6821 14.6668 8.00016C14.6668 4.31826 11.6821 1.3335 8.00016 1.3335C4.31826 1.3335 1.3335 4.31826 1.3335 8.00016C1.3335 11.6821 4.31826 14.6668 8.00016 14.6668Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1.3335 8H14.6668" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.00016 1.3335C9.66768 3.15906 10.6153 5.52819 10.6668 8.00016C10.6153 10.4721 9.66768 12.8413 8.00016 14.6668C6.33264 12.8413 5.38499 10.4721 5.3335 8.00016C5.38499 5.52819 6.33264 3.15906 8.00016 1.3335Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_326_1151">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    Português
+                </a>
+            </div>            
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="img/logo-bughunt.svg" alt="BugHunt - 1ª Plataforma de Bug Bounty do Brasil">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Porquê a Bughunt?</a></li>
+                    <li class="hasChild">
+                        <a href="#">
+                            Soluções
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.50508 6.43965C5.22615 6.71858 4.77387 6.71858 4.49494 6.43965L0.209208 2.15394C-0.0697358 1.87499 -0.0697358 1.42273 0.209208 1.14378C0.488158 0.864834 0.940416 0.864834 1.21937 1.14378L5.00001 4.92443L8.78066 1.14378C9.05959 0.864834 9.51187 0.864834 9.7908 1.14378C10.0697 1.42273 10.0697 1.87499 9.7908 2.15394L5.50508 6.43965Z" fill="black"/>
+                            </svg>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="#" class="publico">Bughunt <strong>Público</strong></a></li>
+                            <li><a href="#" class="privado">Bughunt <strong>Privado</strong></a></li>
+                            <li><a href="#" class="social">Bughunt <strong>Social</strong></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Bughunters</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <a href="#" class="cta">Teste a BugHunt</a>
+        </div>
+    </header>
+
+    <section class="slider">
+        <div class="container">
+            <div class="content">
+                <h2>Fortaleça a cibersegurança da sua empresa e reduza gastos</h2>
+                <p>O Bug Bounty torna o seu negócio mais seguro e rentável por meio da otimização do processo de identificação de falhas, te ajudando a conhecer sua organização de ponta a ponta.</p>
+                <a href="#">Agende uma demo</a>
+            </div>
+            <img src="img/painel.png" alt="Painel BugHunt">
+        </div>
+    </section>
+
+    <section class="clientes">
+        <div class="container">
+            <h2>Empresas que optam pela BugHunt:</h2>
+            <ul>
+                <li><img src="img/olx.png" alt=""></li>
+                <li><img src="img/warren.png" alt=""></li>
+                <li><img src="img/webmotors.png" alt=""></li>
+                <li><img src="img/uol.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="intro">
+        <div class="container">
+            <div class="left coluna">
+                <div class="bloco">
+                    <a href="#" class="flutua"></a>
+                    <h2>Evolua a segurança<br> do seu produto</h2>
+                    <p>Teste e lance novas features com robustez.</p>
+                </div>
+                <div class="bloco">
+                    <a href="#" class="flutua"></a>
+                    <h2>Acesse a <strong>2ª Pesquisa<br> Nacional BugHunt</strong> da<br> Segurança da Informação e<br> saiba mais!</h2>
+                    <a href="#" class="cta">
+                        Baixe agora!
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="17" viewBox="0 0 32 17" fill="none">
+                            <path d="M23.75 1.5L30.75 8.5L23.75 15.5" stroke="#235AF9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M30.75 8.5H1.25" stroke="#235AF9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="right coluna">
+                <div class="bloco">
+                    <a href="#" class="flutua"></a>
+                    <h2>Tenha clareza sobre as<br> vunerabilidades do seu produto</h2>
+                    <p>Tenha em mãos os relatórios para alinhar desenvolvedores, heads e C-Levels sobre os desafios e proiridades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="midia">
+        <div class="container">
+            <div class="left">
+                <h2>“A Bughunt nos ajudou a prevenir erros que teriam impactos devastadores.”</h2>
+                <div class="user">
+                    <img src="img/felipe.png" alt="Felipe Almeida">
+                    <div class="content">
+                        <h5>Felipe Almeida</h5>
+                        <p>CTO do <a href="https://warren.com.br/">Warren</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="bloco">
+                    <img src="img/exame.jpg" alt="Evento inédito irá recompensar hacker por identificar falhas de segurança">
+                    <h3>Evento inédito irá recompensar hacker por identificar falhas de segurança</h3>
+                    <a href="#">
+                        Leia a matéria na integra
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                            <path d="M5.36133 11.3334L12.5018 4.66675" stroke="#7C24FB" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.36133 4.66675H12.5018V11.3334" stroke="#7C24FB" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="bloco">
+                    <img src="img/infor.jpg" alt="Evento inédito irá recompensar hacker por identificar falhas de segurança">
+                    <h3>Evento inédito irá recompensar hacker por identificar falhas de segurança</h3>
+                    <a href="#">
+                        Leia a matéria na integra
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                            <path d="M5.36133 11.3334L12.5018 4.66675" stroke="#7C24FB" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.36133 4.66675H12.5018V11.3334" stroke="#7C24FB" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="solucoes">
+        <div class="container">
+            <h2>Conheça as nossas soluções</h2>
+            <div class="solucoes__blocks">
+                <div class="solucoes__left">
+                    <h3 class="publico">Bughunt <strong>Público</strong></h3>
+                    <h3 class="privado ativo">Bughunt <strong>Privado</strong></h3>
+                    <h3 class="social">Bughunt <strong>Social</strong></h3>
+                </div>
+                <div class="solucoes__center">
+                    <h4>Bughunt Privado</h4>
+                    <ul>
+                        <li>Tenha um programa com controle total</li>
+                        <li>Defina escopos e Bughunters que estão autorizados a fazer parte.</li>
+                        <li><strong>Admissão Digita</strong> e reduz erros de digitação.</li>
+                        <li><strong>Assinatura eletrônica para RH</strong> para assinatura de documentos.</li>
+                    </ul>
+                    <div class="solucoes__nota">
+                        <span class="solucoes__nota-nota">9,3/10</span>
+                        <p>é a nota de satisfação<br> dos usuários.</p>
+                    </div>
+                </div>
+                <div class="solucoes__right">
+                    <img src="img/solucao-privada.png" alt="Privada">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="black">
+        <div class="container">
+            <div class="black__box">
+                <div class="bughunters">
+                    <div class="content">
+                        <h3>Experts do mercado</h3>
+                        <h2>Conte com os Bughunters_</h2>
+                        <p>São profissionais da área de segurança da informação que atuam buscando falhas em sistemas. Na Bughunt todos tem seus documentos validados, NDA...</p>
+                        <div class="icones">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <circle cx="16" cy="16" r="16" fill="#EBF1FF"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.4806 8.8496C24.4071 8.57064 24.1893 8.35277 23.9103 8.27928C20.5613 7.40943 17.0101 8.53617 14.7752 11.1777L13.8832 12.2368L11.7994 11.734C10.7518 11.3688 9.59536 11.8323 9.09 12.8199L7.32984 15.9398C7.20477 16.1615 7.19261 16.4294 7.29711 16.6614C7.4016 16.8935 7.61028 17.062 7.85914 17.1152L10.3173 17.6421C10.1091 18.276 9.96042 18.9279 9.8732 19.5894C9.84116 19.8357 9.92529 20.0829 10.1009 20.2586L12.581 22.7386C12.731 22.8887 12.9344 22.973 13.1466 22.973C13.1697 22.973 13.1927 22.9719 13.2161 22.9699C13.8924 22.9091 14.5605 22.7777 15.2094 22.5779L15.7243 24.9805C15.7777 25.2292 15.9462 25.4378 16.1782 25.5423C16.4102 25.6468 16.6781 25.6347 16.8997 25.5097L20.024 23.7476C20.9262 23.1994 21.3708 22.1311 21.124 21.1047L20.589 18.8975L21.5786 17.9875C24.2307 15.7583 25.3606 12.2004 24.4806 8.8496ZM9.25781 15.7786L10.5027 13.5708C10.6633 13.2596 11.0388 13.1278 11.3586 13.2704L12.7325 13.6033L12.2125 14.2208C11.7195 14.8116 11.2931 15.455 10.9411 16.1393L9.25781 15.7786ZM17.0614 23.5816L19.234 22.3563C19.5194 22.1581 19.6518 21.8035 19.5661 21.4668L19.2433 20.1351L18.6485 20.682C18.0632 21.195 17.4143 21.6305 16.7178 21.9779L17.0614 23.5816ZM20.5251 16.7841L17.5775 19.493C16.4107 20.5021 14.9716 21.1434 13.4412 21.3364L11.5177 19.413C11.7761 17.8785 12.4391 16.4408 13.4384 15.2482L14.7811 13.654C14.8035 13.6306 14.8243 13.6058 14.8436 13.5798L15.9916 12.2169C17.7196 10.1759 20.4119 9.22238 23.0392 9.72076C23.5498 12.3573 22.5868 15.063 20.5251 16.7841ZM18.5869 13.0531C18.5869 12.3903 19.1242 11.8531 19.7869 11.8531L19.7869 11.8531C20.1052 11.853 20.4104 11.9795 20.6355 12.2045C20.8605 12.4296 20.9869 12.7348 20.9869 13.0531C20.9869 13.7158 20.4497 14.2531 19.7869 14.2531C19.1242 14.2531 18.5869 13.7158 18.5869 13.0531Z" fill="#235AF9"/>
+                                </svg>
+                                Profissionais Experientes
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <circle cx="16" cy="16" r="16" fill="#EBF1FF"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.4806 8.8496C24.4071 8.57064 24.1893 8.35277 23.9103 8.27928C20.5613 7.40943 17.0101 8.53617 14.7752 11.1777L13.8832 12.2368L11.7994 11.734C10.7518 11.3688 9.59536 11.8323 9.09 12.8199L7.32984 15.9398C7.20477 16.1615 7.19261 16.4294 7.29711 16.6614C7.4016 16.8935 7.61028 17.062 7.85914 17.1152L10.3173 17.6421C10.1091 18.276 9.96042 18.9279 9.8732 19.5894C9.84116 19.8357 9.92529 20.0829 10.1009 20.2586L12.581 22.7386C12.731 22.8887 12.9344 22.973 13.1466 22.973C13.1697 22.973 13.1927 22.9719 13.2161 22.9699C13.8924 22.9091 14.5605 22.7777 15.2094 22.5779L15.7243 24.9805C15.7777 25.2292 15.9462 25.4378 16.1782 25.5423C16.4102 25.6468 16.6781 25.6347 16.8997 25.5097L20.024 23.7476C20.9262 23.1994 21.3708 22.1311 21.124 21.1047L20.589 18.8975L21.5786 17.9875C24.2307 15.7583 25.3606 12.2004 24.4806 8.8496ZM9.25781 15.7786L10.5027 13.5708C10.6633 13.2596 11.0388 13.1278 11.3586 13.2704L12.7325 13.6033L12.2125 14.2208C11.7195 14.8116 11.2931 15.455 10.9411 16.1393L9.25781 15.7786ZM17.0614 23.5816L19.234 22.3563C19.5194 22.1581 19.6518 21.8035 19.5661 21.4668L19.2433 20.1351L18.6485 20.682C18.0632 21.195 17.4143 21.6305 16.7178 21.9779L17.0614 23.5816ZM20.5251 16.7841L17.5775 19.493C16.4107 20.5021 14.9716 21.1434 13.4412 21.3364L11.5177 19.413C11.7761 17.8785 12.4391 16.4408 13.4384 15.2482L14.7811 13.654C14.8035 13.6306 14.8243 13.6058 14.8436 13.5798L15.9916 12.2169C17.7196 10.1759 20.4119 9.22238 23.0392 9.72076C23.5498 12.3573 22.5868 15.063 20.5251 16.7841ZM18.5869 13.0531C18.5869 12.3903 19.1242 11.8531 19.7869 11.8531L19.7869 11.8531C20.1052 11.853 20.4104 11.9795 20.6355 12.2045C20.8605 12.4296 20.9869 12.7348 20.9869 13.0531C20.9869 13.7158 20.4497 14.2531 19.7869 14.2531C19.1242 14.2531 18.5869 13.7158 18.5869 13.0531Z" fill="#235AF9"/>
+                                </svg>
+                                Documentos validados
+                            </p>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="ranking">Ver ranking</a>
+                            <a href="#" class="signup">Torne-se um Bughunter</a>
+                        </div>                        
+                    </div>
+                    <div class="image">
+                        <img src="img/bughunters-circulo.png" class="circulo">
+                        <img src="img/bughunters-usuarios.png" class="usuarios">
+                    </div>
+                </div>
+
+                <section class="relatorios">
+                    <div class="content">
+                        <h3>Suporte especializado</h3>
+                        <h2>Acompanhamento de Relatórios_</h2>
+                        <p>Tenha um expert da Bughunt intermediando os relatórios e validando cada falha apontada para que seu time técnico olhe sempre para o que vale a pena.</p>
+                        <div class="links">
+                            <a href="#" class="ranking">Falar com a BugHunt</a>
+                        </div>   
+                    </div>
+                    <div class="image">
+                        <img src="img/formulario.png">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sobre">
+        <div class="container">
+            <div class="box">
+                <div class="line">
+                    <div class="col">
+                        <h2>O que é<br> Bug Bounty?</h2>
+                        <p>O Bug Bounty é uma solução colaborativa de cibersegurança que atua como um programa de recompensas por bugs em sistemas e produtos, otimizando o processo de identificação de vulnerabilidade e, desta forma, ajudando as organizações a se protegerem contra ameaças digitais de forma preventiva.</p>    
+                    </div>
+                    <div class="col">
+                        <img src="img/oquee.png">
+                    </div>
+                </div>
+                <div class="line mt">
+                    <div class="col">
+                        <img src="img/icone-bughunters.png">
+                    </div>
+                    <div class="col">
+                        <h2>Quem são os<br> BugHunters?</h2>
+                        <p>Os BugHunters são os especialistas em segurança da informação que atuam ativamente como verdadeiros caçadores em busca de vulnerabilidades e falhas em programas, sistemas e produtos através dos programas de Bug Bounty.</p>    
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seguranca">
+        <div class="container">
+            <h2>Com BugHunt<br> Aprimore a Segurança do Seu Produto</h2>
+            <div class="timeline">
+                <div class="line">
+                    <div class="left image col">
+                        <img src="img/timeline-1.png" alt="BugHunt">
+                    </div>
+                    <div class="right text col">
+                        <img src="img/icone-timeline.png" alt="BugHunt">
+                        <h3>Tenha previsibilidade de custos</h3>
+                        <p>Determine o escopo do seu programa de Bug Bounty conforme a realidade do seu negócio e, também, evite os prejuízos de ataques cibernéticos.</p>
+                    </div>
+                </div>
+                <div class="line">                    
+                    <div class="right text col">
+                        <img src="img/icone-timeline.png" alt="BugHunt">
+                        <h3>Evolua a segurança do seu<br> produto</h3>
+                        <p>Otimize o processo de desenvolvimento do seu produto através de testes em ambientes controlados e faça o lançamento com mais confiança.</p>
+                    </div>
+                    <div class="left image col">
+                        <img src="img/timeline-2.png" alt="BugHunt">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="left image col">
+                        <img src="img/timeline-3.png" alt="BugHunt">
+                    </div>
+                    <div class="right text col">
+                        <img src="img/icone-timeline.png" alt="BugHunt">
+                        <h3>Conheça as vulnerabilidades do seu produto</h3>
+                        <p>Tenha clareza sobre quais são os pontos fracos que podem prejudicar o sucesso do seu negócio para que você consiga evoluir com mais assertividade.</p>
+                    </div>
+                </div>
+                <div class="line">                    
+                    <div class="right text col">
+                        <img src="img/icone-timeline.png" alt="BugHunt">
+                        <h3>Evite sofrer com as atividades cibercriminosas</h3>
+                        <p>Identifique e corrija as brechas de segurança do seu negócio com mais facilidade e fique fora do radar dos cibercriminosos.</p>
+                    </div>
+                    <div class="left image col">
+                        <img src="img/timeline-4.png" alt="BugHunt">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vantagens">
+        <div class="container">
+            <h2>Vantagens únicas para <strong>Segurança do seu negócio</strong></h2>
+            <div class="lista__vantagens splide">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                            <div class="box">
+                                <img src="img/vantagens-1.png">
+                                <h3>Controle seu escopo</h3>
+                                <a href="#">+ detalhes</a>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="box">
+                                <img src="img/vantagens-2.png">
+                                <h3>Testes em ambiente<br> controlado </h3>
+                                <a href="#">+ detalhes</a>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="box">
+                                <img src="img/vantagens-3.png">
+                                <h3>Integrações de<br> ferramentas</h3>
+                                <a href="#">+ detalhes</a>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="box">
+                                <img src="img/vantagens-4.png">
+                                <h3>Especialistas verificados</h3>
+                                <a href="#">+ detalhes</a>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="box">
+                                <img src="img/vantagens-4.png">
+                                <h3>Especialistas verificados</h3>
+                                <a href="#">+ detalhes</a>
+                            </div>
+                          </li>
+                      </ul>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+    <section class="integracoes">
+        <div class="container">
+            <h2>Integrações</h2>
+            <h3>(trello, jira, zendesk, microsoft teams, azure devops)</h3>
+            <img src="img/integracoes.png" alt="Integrações">
+        </div>
+    </section>
+
+
+    <section class="dados">
+        <div class="container">
+            <h2>A BugHunt é a plataforma <strong>número 1</strong><br> de Bug Bounty no Brasil</h2>
+            <div class="blocos">
+                <div class="bloco">
+                    <strong>+30</strong>
+                    <p>empresas satisfeitas</p>
+                </div>
+                <div class="bloco">
+                    <strong>+4k</strong>
+                    <p>relatórios reportados</p>
+                </div>
+                <div class="bloco">
+                    <strong>+20k</strong>
+                    <p>especialistas cadastrados</p>
+                </div>
+                <div class="bloco">
+                    <strong>+20m</strong>
+                    <p>de economia gerada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="programas">
+        <div class="container">
+            <h2>Escolha o <strong>tipo de programa</strong><br> que mais se adequa às suas necessidades:</h2>
+            <div class="blocos">
+                <div class="bloco">
+                    <div class="title">
+                        <h3>Programa Público</h3>
+                    </div>
+                    <ul>
+                        <li>Tenha maior cobertura e exposição do seu programa</li>
+                        <li>Todos os especialistas cadastrados na plataforma podem participar, maximizando seu alcance e eficácia.</li>
+                        <li>Os programas públicos são uma forma de certificar publicamente que sua empresa se preocupa com a proteção de dados e reforçar a confiança dos seus clientes.</li>
+                    </ul>
+                    <a href="#">+ detalhes</a>                    
+                </div>
+                <div class="bloco">
+                    <div class="title">
+                        <h3>Programa Privado</h3>
+                    </div>
+                    <ul>
+                        <li>Tenha total confidencialidade e controle sobre quem tem acesso às especificidades do seu programa.</li>
+                        <li>Apenas especialistas convidados pela empresa podem participar.</li>
+                        <li>Tenha acesso a todos os recursos necessários para definir quais especialistas são mais qualificados para o que seu negócio precisa.</li>
+                        <li>Tenha ainda mais controle com as funcionalidades de NDA e VPN exclusivas.</li>
+                    </ul>
+                    <a href="#">+ detalhes</a>                    
+                </div>
+                <div class="bloco">
+                    <div class="title">
+                        <h3>VDP</h3>
+                        <h4>(Vulnerability Disclosure Program)</h4>
+                    </div>
+                    <ul>
+                        <li>Tenha o seu próprio canal de denúncias digitais com suporte da BugHunt.</li>
+                        <li>O VDP fornece todas as instruções necessárias aos especialistas sobre como relatar um bug, evitando divulgações desordenadas.</li>
+                        <li>Tenha mais controle sobre seu orçamento, o VDP tem um custo pré-definido que se mantém fixo independentemente da quantidade de bugs reportados.</li>
+                    </ul>
+                    <a href="#">+ detalhes</a>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta">
+        <div class="container">
+            <h2>Aumente o seu ROI de segurança tomando as decisões certas</h2>
+            <h3>O Bug Bounty dá mais clareza sobre quais são as falhas mais perigosas e que<br> devem ser prioridade da sua equipe de segurança da informação.</h3>
+            <a href="#">
+                Agendar uma demo
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="17" viewBox="0 0 32 17" fill="none">
+                    <path d="M23.749 1.5L30.749 8.5L23.749 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30.749 8.5H1.24902" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <h2>Confira nossos conteúdos para<br> conhecer mais sobre o Bug Bounty</h2>
+            <h3>Assine a nossa newsletter e fique por dentro dos principais<br> temas sobre cibersegurança!</h3>
+
+
+            <div class="blog__list splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="blog__post">
+                                <a href="https://blog.bughunt.com.br/tres-pilares-da-observalidade/" target="_blank"></a>                                
+                                <img src="https://blog.bughunt.com.br/content/images/2023/12/Conhe-a-os-3-pilares-da-observalidade-para-seguran-a.png" loading="lazy">
+                                <div class="blog__text">
+                                    <small>BugHunt</small>
+                                    <h4>Conheça os 3 pilares da observalidade para segurança da informação</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="blog__post">
+                                <a href="https://blog.bughunt.com.br/tres-pilares-da-observalidade/" target="_blank"></a>                                
+                                <img src="https://blog.bughunt.com.br/content/images/2023/12/Tr-ade-CIA-como-aplicar-em-ciberseguran-a.png" loading="lazy">
+                                <div class="blog__text">
+                                    <small>BugHunt</small>
+                                    <h4>Tríade CIA: o que é e como aplicar em cibersegurança</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="blog__post">
+                                <a href="https://blog.bughunt.com.br/tres-pilares-da-observalidade/" target="_blank"></a>                                
+                                <img src="https://blog.bughunt.com.br/content/images/2023/12/O-que---rubber-duck-debugging-e-como-usar-o-conceito.png" loading="lazy">
+                                <div class="blog__text">
+                                    <small>BugHunt</small>
+                                    <h4>O que é rubber duck debugging e como usar o conceito?</h4>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/splide.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
