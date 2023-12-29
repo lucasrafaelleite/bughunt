@@ -1,0 +1,45 @@
+footer {
+    display: block;
+    border-top: 3px #f5f5f5 solid;
+    padding: 70px 0;
+}
+
+footer .menus {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .menus h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer .menus a {
+    display: block;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+footer .menus a:hover {
+    color: var(--roxo-principal);
+}
+
+footer .copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+footer .social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .social svg {
+    width: 25px;
+    height: 25px;
+}
