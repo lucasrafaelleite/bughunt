@@ -22,3 +22,16 @@ var splide__blog = new Splide( '.blog__list', {
     },
 })
 splide__blog.mount();
+
+
+
+/* Duvidas */
+var duvidas = document.querySelectorAll('section.duvidas ul li');
+if (duvidas) {
+    duvidas.forEach(duvida => {
+        duvida.addEventListener('click', function() {
+            let atual = this.querySelector('.content');
+            atual.classList.toggle('ativo');
+        })
+    })
+}
