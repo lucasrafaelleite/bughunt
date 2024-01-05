@@ -1,0 +1,359 @@
+/* CTA */
+section a.cta {
+    text-align: center;
+    display: block;
+    color: #fff;
+    background: #E10E71;
+    padding: 20px 60px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    transition: all .5s;
+}
+
+section a.cta:hover {
+    background: var(--verde);
+    color: var(--roxo-principal);
+}
+
+
+section.intro__sobre {
+    background: radial-gradient(circle, rgba(115,12,168,1) 28%, rgba(205,107,255,1) 100%);
+    padding: 190px 0;
+    color: #fff;
+    text-align: center;
+}
+
+section.intro__sobre h2 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+section.intro__sobre h2:after {
+    content: '';
+    width: 440px;
+    height: 2px;
+    display: block;
+    margin: 30px auto;
+    background: #E10E71;
+}
+
+section.intro__sobre h3 {
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+
+/* Sobre */
+section.sobre {
+    padding: 110px 0;
+}
+
+section.sobre h2 {
+    font-size: 43px;
+    font-weight: bold;
+    color: var(--roxo-principal);
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+section.sobre h2.center {
+    text-align: center;
+}
+
+section.sobre p {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+section.sobre p:last-child {
+    margin: 0;
+}
+
+section.sobre .line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: center;
+}
+
+section.sobre .line.margin {
+    margin: 120px 0;
+}
+
+section.sobre img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+section.sobre a {
+    margin: 0;
+}
+
+
+section.cta {
+    padding: 100px 0;
+    background: var(--roxo-principal);
+    color: #fff;
+    text-align: center;
+}
+
+section.cta.black {
+    background: #181818;
+}
+
+section.cta .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.cta h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+section.cta.black h2 {
+    color: #E10E71;
+}
+
+section.cta h3 {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+
+/* Ranking */
+section.ranking {
+    padding: 150px 0;
+    background: #ECECEC;
+}
+
+section.ranking h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--roxo-principal);
+}
+
+section.ranking h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0;
+    margin-bottom: 90px;
+}
+
+section.ranking .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-bottom: 90px;
+}
+
+section.ranking .grid .item {
+    background: #fff;
+    border-radius: 8px;
+    background: #fff;
+    padding: 30px 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+section.ranking .grid .item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+section.ranking .grid .item h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E10E71;
+    margin-bottom: 10px;
+}
+
+section.ranking .grid .item p {
+    font-size: 18px;
+    color: #959595;
+}
+
+
+/* Inscricao */
+section.inscricao {
+    padding: 120px 0;
+}
+
+section.inscricao h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--roxo-principal);
+}
+
+section.inscricao h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 0;
+    margin-bottom: 120px;
+}
+
+section.inscricao .timeline {
+    position: relative;
+}
+
+section.inscricao .timeline::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border-left: 1px #dedede dashed;
+    top: 0;
+    left: 50%;
+}
+
+section.inscricao .line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 180px;
+    margin-bottom: 115px;
+    text-align: right;
+    position: relative;
+}
+
+
+section.inscricao .timeline .line:nth-child(2n + 1) {
+    text-align: left;
+}
+
+section.inscricao .line:last-child {
+    margin: 0;
+}
+
+section.inscricao .line img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+section.inscricao h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+section.inscricao .line p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+section.inscricao .number {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px #dedede solid;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 50%;
+    color: var(--roxo-principal);
+    font-weight: bold;
+    float: right;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+section.inscricao .number::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: var(--roxo-principal);
+    border-radius: 50%;
+    position: absolute;
+    right: -97px;
+    top: 20px;
+    z-index: 99;
+    outline: 2px #dedede solid;
+    outline-offset: 2px;
+}
+
+section.inscricao .timeline .line:nth-child(2n + 1) .number {
+    float: left;
+}
+
+section.inscricao .timeline .line:nth-child(2n + 1) .number::after {
+    right: inherit;
+    left: -95px;
+}
+
+
+/* Depoimentos */
+section.depoimentos {
+    padding: 120px 0;
+}
+
+section.depoimentos h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--roxo-principal);
+    margin-bottom: 70px;
+}
+
+
+section.depoimentos .depoimentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+section.depoimentos .depoimento {
+    background: #f5f5f5;
+    border-radius: 24px;
+    padding: 70px;
+}
+
+section.depoimentos .depoimento p {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+section.depoimentos .perfil {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+section.depoimentos .perfil img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+section.depoimentos .perfil h4 {
+    font-weight: bold;
+    color: #E10E71;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+section.depoimentos .perfil h5 {
+    color: #989898;
+    font-size: 16px;
+}
