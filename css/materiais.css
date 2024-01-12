@@ -1,0 +1,140 @@
+/* CTA */
+section a.cta {
+    text-align: center;
+    display: block;
+    color: #fff;
+    background: var(--roxo-principal);
+    padding: 20px 60px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    width: fit-content;
+    transition: all .5s;
+}
+
+section a.cta:hover {
+    background: var(--verde);
+    color: var(--roxo-principal);
+}
+
+section.intro__sobre {
+    background: radial-gradient(circle, rgba(115,12,168,1) 28%, rgba(205,107,255,1) 100%);
+    padding: 190px 0;
+    color: #fff;
+    text-align: center;
+}
+
+section.intro__sobre h2 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+section.intro__sobre h2 strong {
+    background: #E10E71;
+    padding: 0 5px;
+}
+
+section.intro__sobre h3 {
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+
+/* Clientes */
+section.clientes {
+    background: #f2f0f5;
+    padding: 30px 0
+}
+
+section.clientes .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.clientes h2 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+section.clientes ul {
+    display: flex;
+    gap: 40px;
+}
+
+section.clientes ul li {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 155px;
+}
+
+section.clientes ul li img {
+    filter: grayscale(1);
+}
+
+
+/* Sobre */
+section.sobre {
+    padding: 150px 0;
+}
+
+section.sobre.black {
+    background:url(../img/bg-black-materiais.png) #000;
+}
+
+section.sobre.roxo {
+    background: radial-gradient(circle, rgba(115,12,168,1) 50%, rgba(205,107,255,1) 100%);
+}
+
+section.sobre .line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+section.sobre .line:last-child {
+    margin-bottom: 0;
+}
+
+section.sobre h2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+section.sobre p {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+section.sobre.black h2,
+section.sobre.black p,
+section.sobre.roxo h2,
+section.sobre.roxo p {
+    color: #fff;
+}
+
+section.sobre img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+section.sobre.roxo a {
+    background: #E10E71;
+}
