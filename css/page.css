@@ -1,0 +1,78 @@
+/* CTA */
+section a.cta {
+    text-align: center;
+    display: block;
+    color: #fff;
+    background: var(--roxo-principal);
+    padding: 20px 60px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    width: fit-content;
+    transition: all .5s;
+}
+
+section a.cta:hover {
+    background: var(--verde);
+    color: var(--roxo-principal);
+}
+
+section.intro__sobre {
+    background: radial-gradient(circle, rgba(115,12,168,1) 28%, rgba(205,107,255,1) 100%);
+    padding: 100px 0;
+    color: #000;
+}
+
+section.intro__sobre h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+}
+
+section.intro__sobre h2 strong {
+    background: #E10E71;
+    padding: 0 5px;
+}
+
+section.intro__sobre h3 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+section.intro__sobre h4 {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+section.duvidas {
+    padding: 120px 0;
+}
+
+section.duvidas section {
+    margin-bottom: 30px;
+}
+
+section.duvidas,
+section.duvidas p,
+section.duvidas li {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+section.duvidas p:last-child,
+section.agendar p:last-child {
+    margin: 0;
+}
+
+section.duvidas h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
