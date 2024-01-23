@@ -183,6 +183,10 @@ section.seguranca .bloco {
     margin-bottom: 60px;
 }
 
+section.seguranca .right {
+    min-width: 40%;
+}
+
 section.seguranca img {
     display: block;
     border-radius: 8px;
