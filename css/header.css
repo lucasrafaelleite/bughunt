@@ -156,6 +156,6 @@ header .cta {
 }
 
 header .cta:hover {
-    background: var(--verde);
-    color: #000;
+    background: var(--roxo);
+    color: #fff;
 }

@@ -22,7 +22,6 @@ if (document.querySelector('.blog')) {
         fetch('https://blog.bughunt.com.br/ghost/api/v3/content/posts/?key=aae82e19f1c2be980863c0bb5f')
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
             var contador = 0;
             var items = '';
             for (const post of data.posts) {
@@ -77,4 +76,36 @@ if (duvidas) {
             atual.classList.toggle('ativo');
         })
     })
+}
+
+
+
+/* Solucões */
+var solucoes_menu = document.querySelectorAll('section.solucoes .solucoes__left h3');
+if (solucoes_menu) {
+    solucoes_menu.forEach(solucao => {
+        solucao.addEventListener('click', function(e) {
+            e.preventDefault();
+            var openThis = this.getAttribute('data-open');
+
+            // remove ativo
+            solucoes_menu.forEach(solucao => {
+                solucao.classList.remove('ativo');
+            })
+
+            // add ativo
+            this.classList.add('ativo');
+
+
+            // abri o bloco correto
+            var solucoes_blocks = document.querySelectorAll('section.solucoes .solucoes__center.block');
+            solucoes_blocks.forEach(block => {
+                if (block.classList.contains(openThis)) {
+                    block.style.display = 'block';
+                } else {
+                    block.style.display = 'none';
+                }
+            });
+        })
+    });
 }
