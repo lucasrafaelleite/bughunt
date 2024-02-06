@@ -663,7 +663,7 @@ section.vantagens .box a {
 
 /* Dados */
 section.dados {
-    padding-bottom: 100px
+    padding: 120px 0;
 }
 
 section.dados h2 {
