@@ -2,8 +2,8 @@
 if (document.querySelector('.lista__vantagens')) {
     var splide_vantagens = new Splide( '.lista__vantagens', {
         type : 'loop',
-        perPage: 4,
-        gap: 60,
+        perPage: 3,
+        gap: 30,
         breakpoints: {
             640: {
             },
@@ -14,10 +14,8 @@ if (document.querySelector('.lista__vantagens')) {
 
 
 /* Blog */
-
-/* Blog */
 if (document.querySelector('.blog')) {
-    document.querySelector('.blog__list .splide__list').innerHTML = '<img src="../img/loading.gif" style="display:block; width:50px; margin:auto; position:absolute; left:50%; margin-left:-25px">';
+    document.querySelector('.blog__list .splide__list').innerHTML = '<img src="./img/loading.gif" style="display:block; width:50px; margin:auto; position:absolute; left:50%; margin-left:-25px">';
     function fetchPosts() {
         fetch('https://blog.bughunt.com.br/ghost/api/v3/content/posts/?key=aae82e19f1c2be980863c0bb5f')
         .then((response) => response.json())
@@ -68,15 +66,17 @@ if (document.querySelector('.blog')) {
 
 
 /* Duvidas */
-var duvidas = document.querySelectorAll('section.duvidas ul li');
-if (duvidas) {
-    duvidas.forEach(duvida => {
-        duvida.addEventListener('click', function() {
-            let atual = this.querySelector('.content');
-            atual.classList.toggle('ativo');
+window.addEventListener('load', function () {
+    var duvidas = document.querySelectorAll('section.duvidas ul li');
+    if (duvidas) {
+        duvidas.forEach(duvida => {
+            duvida.addEventListener('click', function() {
+                let atual = this.querySelector('.content');
+                atual.classList.toggle('ativo');
+            })
         })
-    })
-}
+    }
+})
 
 
 

@@ -1,0 +1,107 @@
+/* Duvidas */
+section.duvidas {
+    display: block;
+    margin-top: 80px;
+}
+
+section.duvidas .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+section.duvidas .left {
+    max-width: 460px;
+}
+
+section.duvidas .right {
+    max-width: 655px;
+    width: 655px;
+}
+
+section.duvidas h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 20px
+}
+
+section.duvidas h3 {
+    font-size: 24px;
+    margin-bottom: 60px;
+    color: #4D4D60;
+    line-height: 1.4;
+}
+
+section.duvidas a {
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: fit-content;
+    font-size: 16px;
+    border:1px #7C24FB solid;
+    transition: all .3s;
+}
+
+section.duvidas a:hover {
+    background: #7C24FB;
+    color: #fff;
+}
+
+
+section.duvidas ul {
+    display: flex;
+    flex-direction: column;
+}
+
+section.duvidas li {
+    padding: 15px 0;
+}
+
+section.duvidas ul h4 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding-right: 64px;
+    position: relative;
+    cursor: pointer;
+}
+
+section.duvidas ul h4:hover {
+    color: var(--roxo-principal);
+}
+
+section.duvidas ul h4:after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-top: 2px #000 solid;
+    border-right: 2px #000 solid;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -7px;
+    transform: translateY(-50%);
+    transform: rotate(135deg);
+}
+
+section.duvidas .content {
+    display: none;
+}
+
+section.duvidas .content.ativo {
+    display: block;
+}
+
+section.duvidas p {
+    line-height: 2;
+    font-size: 15px;
+}
+
+section.duvidas p:not(:last-child) {
+    margin-bottom: 20px;
+}

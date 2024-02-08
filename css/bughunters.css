@@ -246,10 +246,16 @@ section.inscricao .line:last-child {
     margin: 0;
 }
 
-section.inscricao .line img {
+section.inscricao .line img,
+section.inscricao video {
     max-width: 100%;
     border-radius: 8px;
 }
+
+section.inscricao video {
+    border: 3px #f5f5f5 solid;
+}
+
 
 section.inscricao h4 {
     font-size: 24px;
@@ -329,6 +335,9 @@ section.depoimentos .depoimento {
     background: #f5f5f5;
     border-radius: 24px;
     padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 section.depoimentos .depoimento p {
@@ -345,8 +354,8 @@ section.depoimentos .perfil {
 
 section.depoimentos .perfil img {
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
 }
 

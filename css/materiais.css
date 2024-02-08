@@ -14,8 +14,8 @@ section a.cta {
 }
 
 section a.cta:hover {
-    background: var(--verde);
-    color: var(--roxo-principal);
+    background: var(--roxo);
+    color: #fff;
 }
 
 section.intro__sobre {
