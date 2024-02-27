@@ -315,12 +315,12 @@ section.comunidade a {
 section.cenario .container {
     padding: 70px;
     box-sizing: border-box;
-    background: #262626;
+    background: #f5f5f5;
     border-radius: 32px;
 }
 
 section.cenario h2 {
-    color:  #E10E71;
+    color:  #333;
     font-size: 30px;
     font-weight: bold;
     line-height: 1.5;
@@ -330,22 +330,29 @@ section.cenario h2 {
 
 section.cenario ul {
     margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
 }
 
 section.cenario ul li {
-    color: #fff;
-    font-size: 17px;
+    color: #333;
+    font-size: 15px;
     line-height: 1.5;
     display: flex;
+    flex-direction: column;
     gap: 10px;
-    align-items: flex-start;
-    margin-bottom: 30px;
+    align-items: center;
+    border: 1px #dedede solid;
+    padding: 30px;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
 }
 
-section.cenario ul li::before {
-    content: '●';
-    font-size: 8px;
-    margin-top: 7px;
+section.cenario ul li h4 {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 section.cenario a {
@@ -423,6 +430,8 @@ section.imprensa .noticias .thumb {
     border-radius: 8px;
     display: block;
     margin-bottom: 20px;
+    height: 200px;
+    object-fit: cover;
 }
 
 section.imprensa .noticias h3 {

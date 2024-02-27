@@ -287,7 +287,7 @@ section.solucoes .solucoes__blocks {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 150px;
+    gap: 90px;
 }
 
 section.solucoes .solucoes__center {
@@ -307,9 +307,13 @@ section.solucoes h3 strong {
     font-weight: bold;
 }
 
-section.solucoes h3.publico strong { color: #7C24FB;}
-section.solucoes h3.privado strong { color: #32B77E;}
-section.solucoes h3.social strong { color: #1E88E5;}
+section.solucoes h3 small {
+    font-size: 16px;
+}
+
+section.solucoes h3.publico strong, h4.roxo { color: #7C24FB;}
+section.solucoes h3.privado strong, h4.verde { color: #32B77E;}
+section.solucoes h3.social strong, h4.azul { color: #1E88E5;}
 
 section.solucoes h3:hover.publico,
 section.solucoes h3.ativo.publico {
@@ -331,17 +335,18 @@ section.solucoes h4 {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 section.solucoes ul li {
     font-size: 16px;
     margin-bottom: 30px;
     line-height: 1.5;
-    color: #24845B;
+    color: #333;
 }
 
 section.solucoes .solucoes__nota-nota {
-    color: #24845B;
+    color: #000;
     font-size: 30px;
     margin-bottom: 10px;
     display: block;
@@ -513,95 +518,6 @@ section.sobre .box p {
     line-height: 24px;
     font-size: 16px;
 }
-
-/* Segurança */
-section.seguranca {
-    display: block;
-    margin-bottom: 150px
-}
-
-section.seguranca h2 {
-    font-size: 48px;
-    line-height: 1.1;
-    text-align: center;
-    margin-bottom: 120px;
-}
-
-section.seguranca .timeline {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    max-width: 1122px;
-    margin: auto;
-}
-
-section.seguranca .timeline:after {
-    content:'';
-    background: #E6DAF8;
-    display: block;
-    width: 1px;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    position: absolute;
-}
-
-section.seguranca .timeline .line {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 150px;
-}
-
-section.seguranca .timeline .line:last-child {
-    margin: 0;
-}
-
-section.seguranca .timeline .line:after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    display: block;
-    background: #7C24FB;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    z-index: 2;
-    border-radius: 50px;
-}
-
-section.seguranca .timeline .line .col {
-    max-width: 50%;
-    width: 50%;
-    padding: 0 60px;
-}
-
-section.seguranca .timeline .image img {
-    display: block;
-}
-
-section.seguranca .timeline .text {
-    margin-top: -25px;
-}
-
-section.seguranca .timeline .text img {
-    display: block;
-    margin-bottom: 15px;
-}
-
-section.seguranca .timeline h3 {
-    font-size: 28px;
-    color: #000;
-    margin-bottom: 20px;
-}
-
-section.seguranca .timeline p {
-    font-size: 16px;
-    line-height: 30px;
-}
-
 
 /* Vantagens */
 section.vantagens {
@@ -979,7 +895,7 @@ section.newsletter .left {
 }
 
 section.newsletter h2 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 

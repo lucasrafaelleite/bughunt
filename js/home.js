@@ -13,6 +13,21 @@ if (document.querySelector('.lista__vantagens')) {
 }
 
 
+/* Duvidas */
+setTimeout(() => {
+    var duvidas = document.querySelectorAll('section.duvidas ul li');
+    if (duvidas) {
+        duvidas.forEach(duvida => {
+            console.log(duvida);
+            duvida.addEventListener('click', function() {
+                let atual = this.querySelector('.content');
+                atual.classList.toggle('ativo');
+            })
+        })
+    }
+}, 100);
+
+
 /* Blog */
 if (document.querySelector('.blog')) {
     document.querySelector('.blog__list .splide__list').innerHTML = '<img src="./img/loading.gif" style="display:block; width:50px; margin:auto; position:absolute; left:50%; margin-left:-25px">';
@@ -64,22 +79,6 @@ if (document.querySelector('.blog')) {
 
 
 
-
-/* Duvidas */
-window.addEventListener('load', function () {
-    var duvidas = document.querySelectorAll('section.duvidas ul li');
-    if (duvidas) {
-        duvidas.forEach(duvida => {
-            duvida.addEventListener('click', function() {
-                let atual = this.querySelector('.content');
-                atual.classList.toggle('ativo');
-            })
-        })
-    }
-})
-
-
-
 /* Solucões */
 var solucoes_menu = document.querySelectorAll('section.solucoes .solucoes__left h3');
 if (solucoes_menu) {
@@ -99,9 +98,11 @@ if (solucoes_menu) {
 
             // abri o bloco correto
             var solucoes_blocks = document.querySelectorAll('section.solucoes .solucoes__center.block');
+            var solucoes_image = document.querySelector('section.solucoes .solucoes__right img');
             solucoes_blocks.forEach(block => {
                 if (block.classList.contains(openThis)) {
                     block.style.display = 'block';
+                    solucoes_image.setAttribute('src', './img/solucao-' + openThis + '.png');
                 } else {
                     block.style.display = 'none';
                 }
