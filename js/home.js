@@ -5,7 +5,8 @@ if (document.querySelector('.lista__vantagens')) {
         perPage: 3,
         gap: 30,
         breakpoints: {
-            640: {
+            768: {
+                perPage: 1
             },
         },
     })
@@ -18,7 +19,6 @@ setTimeout(() => {
     var duvidas = document.querySelectorAll('section.duvidas ul li');
     if (duvidas) {
         duvidas.forEach(duvida => {
-            console.log(duvida);
             duvida.addEventListener('click', function() {
                 let atual = this.querySelector('.content');
                 atual.classList.toggle('ativo');
@@ -61,7 +61,9 @@ if (document.querySelector('.blog')) {
                 gap: 15,
                 autoWidth: true,
                 breakpoints: {
-                    640: {
+                    768: {
+                        perPage: 1,
+                        arrows: false
                     },
                 },
             })
