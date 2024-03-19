@@ -633,6 +633,15 @@
     }
 
 
+    .splide__cenario .splide__arrow--next {
+        margin-right: -30px;
+    }
+    
+    .splide__cenario .splide__arrow--prev {
+        margin-left: -30px;
+    }
+
+
     /* Solucoes */
     section.sobre--solucoes {
         padding: 0;

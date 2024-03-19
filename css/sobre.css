@@ -328,14 +328,23 @@ section.cenario h2 {
     text-align: center;
 }
 
-section.cenario ul {
-    margin-bottom: 60px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+section.cenario .splide__slide {
+    display: flex;
 }
 
-section.cenario ul li {
+.splide__cenario  {
+    margin-bottom: 50px;
+}
+
+.splide__cenario .splide__arrow--next {
+    margin-right: -60px;
+}
+
+.splide__cenario .splide__arrow--prev {
+    margin-left: -60px;
+}
+
+section.cenario ul li .box {
     color: #333;
     font-size: 15px;
     line-height: 1.5;
